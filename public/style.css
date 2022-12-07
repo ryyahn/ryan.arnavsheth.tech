@@ -12,3 +12,31 @@ nav {
     margin-right: 1rem;
     margin-top: 1rem;
 }
+body {
+    background: rgb(2,0,36);
+}
+.display {
+    background: linear-gradient(337deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
+    border-radius: 1rem;
+    margin: 3rem;
+}
+.item {
+    margin: 1rem;
+    padding-top: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: rgb(33, 36, 41)
+}
