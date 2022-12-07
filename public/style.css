@@ -23,14 +23,55 @@ img {
 h1 {
     text-align: center;
     margin: 10rem;
+    margin-bottom: 5rem;
     font-size: 5rem;
     background: -webkit-linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-background: rgb(2,0,36);
-background: -moz-linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
-background: -webkit-linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
-background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+.gsce-searchbox-only {
+    border-radius: 1rem;
+}
+form {
+    background: linear-gradient(337deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
+    width: 50%;
+    height: 3rem;
+    border-radius: 5px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  svg {
+    color: #fff;
+    fill: currentColor;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+  }
+.search {
+   display: block;
+   text-align: center;
+}

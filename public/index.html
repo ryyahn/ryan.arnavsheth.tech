@@ -18,6 +18,17 @@
 
 <body>
   <h1>Search</h1>
+  <div class="search">
+    <form role="search" id="form">
+      <input type="search" id="query" name="q"
+       placeholder="Search..."
+       aria-label="Search through site content">
+      <button>
+       
+      </button>
+    </form>
+  </div>
+  
   <div class="display">
     <div class="row">
       <div class="col">
@@ -79,6 +90,20 @@
   
     </div>
   </div>
+  <script>
+    const f = document.getElementById('form');
+    const q = document.getElementById('query');
+    const google = 'https://www.google.com/search?q=';
+
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + '+' + q.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+
+    f.addEventListener('submit', submitted);
+  </script>
 </body>
 
 </html>
